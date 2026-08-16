@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+  href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+  rel="stylesheet"
+/>
+</head>
+<body>
+
+    <div class="main">
+        <div class="sidebox">
+            <div class="logo">
+                <div class="top">
+                <span><i class="ri-stack-fill"></i></span>
+                <div class="company">
+                    <h1>FinTrack Pro</h1>
+                    <h6>Enterprise Finance</h6>
+                </div>
+            </div>
+            </div>
+
+            <div class="options">
+                <div class="dashboard">
+                    <span><i class="ri-dashboard-horizontal-fill"></i></span>
+                    <h1>Dashbaord</h1>
+                </div>
+                <div class="settings">
+                    <span><i class="ri-settings-5-fill"></i></span>
+                    <h1>Settings</h1>
+                </div>
+            </div>
+
+            <div class="bottom">
+                <div class="addtransition">
+                <span><i class="ri-add-fill"></i></span>
+                <h5>Add Transition</h5>
+            </div>
+            </div>
+
+
+        </div>
+
+        <div class="navbar">
+            <div class="box">
+            <div class="line"><h6>|</h6></div>
+            <div class="profile"><span id="naam"></span></div>
+            <div class="logout"><button> <span><i class="ri-logout-box-r-line"></i></span> logout</button></div>
+            </div>
+        </div>
+<div class="main2">
+    <div class="heading1">
+            <h1>Financial Overview</h1>
+            <h5>Real-time tracking application</h5>
+        </div>
+        <div class="sub-box">
+            <div class="box10">
+                <div class="symbol"><span><i class="ri-bank-line"></i></span></div>
+                <div class="topic"><h5>Current Balance</h5></div>
+                <div  id="currentbalance" class="value"> <span id="rupees1"></span> <span id="balanced10" ></span></div>
+            </div>
+            <div class="box20">
+                <div  id="gro" ><span><i class="ri-arrow-right-up-line"></i></span></div>
+                <div class="topic"><h5>Total Income</h5></div>
+                <div  id="incomeamt" class="value"> <span id="rupees"></span> <span id="income10"></span></div>
+            </div>
+            <div class="box30">
+                <div  id="down" ><span><i class="ri-arrow-right-down-line"></i></span></div>
+                <div class="topic"><h5>Total Expense</h5></div>
+                <div  id="exp" class="value">  <span id="rupees2"></span> <span id="expenses10"></span></div>
+            </div>
+            <div class="box40">
+                <div class="symbol"><span><i class="ri-hand-coin-line"></i></span></div>
+                <div class="topic"><h5>Total Transactions</h5></div>
+                <div id="transactiontimes" class="value"><span id="Transaction10"></span></div>
+            </div>
+        </div>
+
+        <div class="flatchart">
+<div class="graph">
+
+
+<canvas id="myChart"></canvas>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</div>
+
+
+<div class="prefernaces">
+    <h1>Preferences</h1>
+    <div class="toogle">
+        <h4>Theme Switch</h4>
+        <button id="theme-switch">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M338.5-338.5Q280-397 280-480t58.5-141.5Q397-680 480-680t141.5 58.5Q680-563 680-480t-58.5 141.5Q563-280 480-280t-141.5-58.5ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z"/></svg>
+        </button>
+
+    </div>
+    <div class="reset">
+        <button id="reset10"><span><i class="ri-delete-bin-line"></i></span>Reset all data</button>
+    </div>
+ </div>
+        </div>
+
+
+
+ <div class="sett10">
+        <div class="top10">
+        <h1>Settings</h1>
+        <p>Manage your account profile and app formatting.</p>
+        </div>
+        <div class="sub">
+            <h1>Profile Details</h1>
+            <form id="settingForm">
+            <div class="inner-box">
+                <div class="inner1">
+                    <label for="ok1000">Full Name</label>
+                    <input   id="ok1000"  type="text" placeholder="enter the name">
+
+                </div>
+                <div class="inner2">
+                <label for="">currency</label>
+                 <select  id="currency">
+                    <optgroup label="currency">
+                        <option value="$">$</option>
+                        <option value="€">€</option>
+                        <option value="₹">₹</option>
+                    </optgroup>
+                 </select>
+                </div>
+        </div>
+       
+        <div class="save">
+            <button>Save changes</button>
+            <button>edit</button>
+
+        </div>
+        
+</form>
+    </div>
+ </div>
+
+</div>
+
+
+        <div class="form1">
+    <div class="form">
+        <div class="cross">x</div>
+
+        <form id="transactionForm">
+
+            <h1>type</h1>
+            <select id="selection1">
+                <option value="expenses">expenses</option>
+                <option value="income">income</option>
+            </select>
+
+            <h1>description</h1>
+            <input id="description" type="text" placeholder="description">
+
+            <h1>amount</h1>
+            <input id="amount" type="number" placeholder="amount">
+
+            <h1>date</h1>
+            <input id="date" type="date">
+
+            <h1>category</h1>
+            <select  id="selection2">
+                <option value="entertainment">entertainment</option>
+                <option value="salary">salary</option>
+                <option value="food">food</option>
+                <option value="petrol">petrol</option>
+                <option value="investment">investment</option>
+                <option value="luxury">luxury</option>
+                <option value="shoping">shoping</option>
+                <option value="eduction">eduction</option>
+            </select>
+
+            <button type="submit" class="save">Save</button>
+
+        </form>
+    </div>
+</div>
+   
+   
+
+    
+ <div class="alltransition">
+    <div class="transactionbox">
+        <h1>All Transactions</h1>
+        <div class="toptrans">
+            <input type="text" placeholder="Search Transitions">
+        <select id="transi">
+            <option value="">Expense</option>
+            <option value="">Income</option>
+        </select>
+        </div>
+        <div class="toptrans1">
+            <div class="topic">DATE</div>
+            <div class="topic">DESCRIPTION</div>
+            <div class="topic">CATRGORY</div>
+            <div class="topic">AMOUNT</div>
+            <div class="topic">ACTIONS</div>
+            </div>
+            <div class="TOPHEAD">
+            <!---<div class="toptrans2">
+                <div class="topic2">2026-08-06</div>
+                <div class="topic2">Business</div>
+                <div class="topic2">Petrol and auto</div>
+                <div class="topic2">$2000</div>
+                <div class="topic2">
+                    <span id="blue" ><i class="ri-edit-line"></i></span>
+                    <span id="red" ><i class="ri-delete-bin-fill"></i></span></div>
+            </div>---->
+            </div>
+    </div>
+    
+ </div>
+    
+    </div>
+      
+    
+   
+    <script src="./finance.js" defer></script>
+</body>
+</html>

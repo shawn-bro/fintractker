@@ -1,0 +1,39 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+html,
+body{
+    height: 100%;
+    width: 100%;
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#loginForm{
+    height: 60%;
+    width: 60%;
+    border-radius: 25px;
+    box-shadow: 1px 2px 3px rgb(135, 221, 238);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    border: none;
+}
+input{
+    padding: 10px 20px;
+    width: 60%;
+    border-radius: 25px;
+    box-shadow: 1px 2px 3px rgb(139, 224, 228);
+    border: none;
+}
+button{
+    padding: 10px 20px;
+    border-radius: 25px;
+    box-shadow: 1px 2px 3px rgb(114, 188, 197);
+    border: none;
+}
