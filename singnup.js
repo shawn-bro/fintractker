@@ -9,6 +9,7 @@ function signup() {
 
     if (existingUser) {
         alert("User already exists");
+         window.location.href = "login.html";
         return;
     }
 
