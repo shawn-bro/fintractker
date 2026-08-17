@@ -177,10 +177,10 @@ let obj10 = {
 
 form1.reset();
 })
-document.querySelector("#naam").textContent = setting[0].names1000;
-document.querySelector("#rupees").textContent = setting[0].currency1000;
-document.querySelector("#rupees1").textContent = setting[0].currency1000;
-document.querySelector("#rupees2").textContent = setting[0].currency1000;
+document.querySelector("#naam").textContent = settingarr[0].names1000;
+document.querySelector("#rupees").textContent = settingarr[0].currency1000;
+document.querySelector("#rupees1").textContent = settingarr[0].currency1000;
+document.querySelector("#rupees2").textContent = settingarr[0].currency1000;
 
 let darkmode = localStorage.getItem('darkmode')
 const themeSwitch = document.getElementById('theme-switch')
