@@ -4,7 +4,6 @@ let updateindex = null;
 document.querySelector(".settings").addEventListener("click",()=>{
     document.querySelector(".sett10").style.display = "flex";
 })
-
 document.querySelector(".dashboard").addEventListener("click",()=>{
 document.querySelector(".sett10").style.display = "none";
 })
